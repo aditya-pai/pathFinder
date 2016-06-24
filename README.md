@@ -6,9 +6,9 @@
 This folder contains the following files:
 1. gridSolver.py
 2. sim1.py
-3. algo1.py
+3. bfs.py
 4. sim2.py
-5. algo2.py
+5. aStar.py
 6. unitTest.py
 
 
@@ -35,8 +35,8 @@ Please run all files using PYTHON 3
 The scripts meant to be run are:
 
 gridSolver.py
-algo1.py
-algo2.py
+bfs.py
+aStar.py
 
 The scripts can be run with command line parameters, for defining the dimensions of the grid.
 
@@ -48,13 +48,11 @@ Note: Invalid arguments will result in defaulting to random values.
 
 KEY to GRID:
 
-- : Free Cell (Weight=1 in sim2.py)
+'-' : Free Cell (Weight=1 in sim2.py)
 
 X : Obstacle
 
-+ : Cell with weight (only in algo1_failcase.py)
-
-(cell with number) : Weight of the particular cell (only in algo2.py)
+(cell with number) : Weight of the particular cell 
 
 S : Start Cell
 
