@@ -113,7 +113,7 @@ def printGrid(size,obstacles,start,goal,weightedCells, **var):
             elif el == "S " or el=="G ":
                 print(colored(el,'cyan'), end="")
             else:
-                print(colored(el,'blue'), end="")
+                print(colored(el,'magenta'), end="")
         print("  ",x)                                   #Print row number
 
 #Retrieve traversed path from path list
