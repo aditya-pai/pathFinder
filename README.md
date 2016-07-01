@@ -17,11 +17,11 @@ gridSolver.py provides an interface that invokes the algorithm based on user inp
 
 sim1.py is the simulator required by the first part of the problem.
 
-algo1.py is the script with the algorithm that solves the grid produced by the method defined in sim.py.
+bfs.py is the script with the algorithm that solves the grid produced by the method defined in sim.py.
 
 sim2.py is the simulator with extended dynamics(weights added).
 
-algo2.py is the script with the algorithm that solves the grid produced by the method defined in sim2.py.
+aStar.py is the script with the algorithm that solves the grid produced by the method defined in sim2.py.
 
 unitTest.py contains unit tests for certain methods of algo2.py and sim2.py.
 
@@ -40,7 +40,7 @@ aStar.py
 
 The scripts can be run with command line parameters, for defining the dimensions of the grid.
 
-Eg: python <filename>.py <arg1> <arg2>
+Eg: python <filename> <arg1> <arg2>
 
 Note: Invalid arguments will result in defaulting to random values.
 

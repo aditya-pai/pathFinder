@@ -1,6 +1,6 @@
 ###PLEASE RUN USING PYTHON3
 ###AUTHOR: ADITYA D PAI
-
+###------GRID SPACE SIMULATOR-------
 import random
 
 def getGrid(size):
@@ -8,25 +8,25 @@ def getGrid(size):
 	obstacles=[]
 	count=int(height*(random.randint(height-1,height+5)/10))
 	for i in range (0,count):
-		Ox=random.randint(0,width-1)
-		Oy=random.randint(0,height-1)
-		index=(Ox,Oy)
+		origin_x=random.randint(0,width-1)
+		origin_y=random.randint(0,height-1)
+		index=(origin_x,origin_y)
 		obstacles.append(index)
 
-	Sx=random.randint(0,width-1)
-	Sy=random.randint(0,height-1)
-	Gx=random.randint(0,width-1)
-	Gy=random.randint(0,height-1)
-	start=(Sx,Sy)
-	goal=(Gx,Gy)
+	start_x=random.randint(0,width-1)
+	start_y=random.randint(0,height-1)
+	goal_x=random.randint(0,width-1)
+	goal_y=random.randint(0,height-1)
+	start=(start_x,start_y)
+	goal=(goal_x,goal_y)
 
 	while start in obstacles:
-		Sx=random.randint(0,width-1)
-		Sy=random.randint(0,height-1)	
-		start=(Sx,Sy)
+		start_x=random.randint(0,width-1)
+		start_y=random.randint(0,height-1)	
+		start=(start_x,start_y)
 
 	while start==goal or goal in obstacles:
-		Gx=random.randint(0,width-1)
-		Gy=random.randint(0,height-1)
-		goal=(Gx,Gy)
+		goal_x=random.randint(0,width-1)
+		goal_y=random.randint(0,height-1)
+		goal=(goal_x,goal_y)
 	return obstacles,start,goal
